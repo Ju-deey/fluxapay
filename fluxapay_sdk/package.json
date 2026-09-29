@@ -18,7 +18,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "test": "npm run test:unit && npm run test:webhook && npm run test:integration",
     "test:unit": "tsx src/__tests__/sdk.test.ts",
     "test:webhook": "tsx src/__tests__/webhook.test.ts",

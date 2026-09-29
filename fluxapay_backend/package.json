@@ -4,9 +4,9 @@
   "description": "Fluxapay is a payment gateway on the Stellar blockchain that enables merchants to accept crypto payments and get settled in their local fiat currency.",
   "main": "index.js",
   "scripts": {
-    "build": "prisma generate && tsc -p tsconfig.build.json",
-    "start": "node dist/index.js",
-    "dev": "nodemon src/index.ts",
+    "build": "node init && prisma generate && tsc -p tsconfig.build.json",
+    "start": "node init && node dist/index.js",
+    "dev": "node init && nodemon src/index.ts",
     "worker:payment-monitor": "ts-node src/workers/paymentMonitor.worker.ts",
     "worker:payment-monitor:dev": "nodemon src/workers/paymentMonitor.worker.ts",
     "worker:payment-monitor:build": "tsc src/workers/paymentMonitor.worker.ts --outDir dist",
