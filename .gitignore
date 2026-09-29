@@ -25,14 +25,11 @@ fluxapay_backend/swagger.json
 *.tsbuildinfo
 
 # Env files
-.env
-.env.*
 !.env.example
 
 # OS / Editor
 .DS_Store
 Thumbs.db
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -50,3 +47,7 @@ fluxapay_backend/prisma/*.db-journal
 
 issue.md
 pr.md
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+config.bat
